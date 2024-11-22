@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados</title>
+    <style>
+        /* Estilos para o quadrado1 */
+        .quadrado1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            z-index: 2;
+        }
+
+        /* Estilos para o quadrado2 */
+        .quadrado2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 120px; /* Está um pouco mais pra cima que o quadrado1 */
+            left: 150px;
+            z-index: 1; /* Está atrás do quadrado1 */
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado2"></div>
+    <div class="quadrado1"></div>
+</body>
+</html>

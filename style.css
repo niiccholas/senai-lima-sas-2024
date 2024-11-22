@@ -80,7 +80,7 @@ main {
     height: 17vh;
     position: absolute;
     top: 15%;
-    right: 62%;
+    right: 63.5vw;
 }
 
 .arte h1{
@@ -93,5 +93,37 @@ main {
 .pastas{
     height: 60%;
     width: 100%;
+    display: flex;
     background-color: chocolate;
+    align-items: end;
+    justify-content: space-between;
+    padding: 3vw;
+    padding-inline: 5vw;
 }
+
+.pasta1, .pasta2{
+    width: auto;
+    background-color: rgb(208, 203, 197);
+    display: flex;
+    flex-direction: column;
+}
+
+.pasta1, .pasta2, .quadrado{
+    align-items: end;
+}
+.pasta1 {
+    height: 42vh;
+}
+
+.pasta2{
+    height: 37vh;
+}
+
+.quadrado{
+    height: 42vh;
+}
+
+.pastas div img{
+    height: 100%;
+}
+
