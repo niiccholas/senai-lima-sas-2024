@@ -1,0 +1,87 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none; /* tira o sublinhado */
+    color: inherit; /* tira o esquema de cores */
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+/* fim do reset */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 20vw;
+}
+
+.logo{
+    height: 5vh;
+}
+
+main {
+    flex-grow: 1;
+    background-color: antiquewhite;
+}
+
+.menu{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.9vh;
+    background-color: transparent;
+    border: 3.5px solid #0000003f;
+    width: 7vw;
+    text-align: center;
+    padding: 0.7vw;
+    border-radius: 50px;
+}
+
+.menu a{
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.menu:hover{
+    border: 3.5px solid #4A0592;
+    font-size: 2.1vh;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/* .options img:hover {
+  transform: scale(1.2);
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+input[type="radio"]:checked + img {
+    border: 3px solid #7B214B; 
+}
