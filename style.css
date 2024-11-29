@@ -39,7 +39,6 @@ header {
 
 main {
     height: 88vh;
-    background-color: antiquewhite;
 
 }
 
@@ -88,14 +87,13 @@ main {
     font-size: 30vh;
     font-style: italic;
     z-index: 2;
+    user-select: none;
 }
 
 .pastas{
     height: 60%;
     width: 100%;
     display: flex;
-    background-color: chocolate;
-    align-items: end;
     justify-content: space-between;
     padding: 3vw;
     padding-inline: 5vw;
@@ -103,7 +101,6 @@ main {
 
 .pasta1, .pasta2{
     width: auto;
-    background-color: rgb(208, 203, 197);
     display: flex;
     flex-direction: column;
 }
@@ -115,15 +112,76 @@ main {
     height: 42vh;
 }
 
+.arquivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2vh;
+    background-color: rgb(237, 237, 231);
+    height: 37vh;
+    width: 36vh;
+    position: absolute;
+    top: 49%;
+    border-radius: 9px;
+    border: 0.5px solid #ccc;;
+    z-index: -1;
+    gap: 3vh;
+    transition: all 0.3s ease;
+}
+
+.pasta1:hover .arquivo {
+    top: 44%;
+}
+
+.arquivo div{
+    width: 30vh;
+    border-radius: 2.2vh;
+    height: 1.1vh;
+    background-color: rgb(40, 40, 40);
+}
+
 .pasta2{
     height: 37vh;
+}
+
+.arquivo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2vh;
+    background-color: rgb(237, 237, 237);
+    height: 37vh;
+    width: 36vh;
+    position: absolute;
+    top: 53%;
+    border-radius: 9px;
+    border: 0.5px solid #ccc;;
+    z-index: -1;
+    gap: 3vh;
+    transition: all 0.3s ease;
+}
+
+.arquivo2 div{
+    width: 30vh;
+    border-radius: 2.2vh;
+    height: 1.1vh;
+    background-color: rgb(40, 40, 40);
+}
+
+.pasta2:hover .arquivo2 {
+    top: 49.5%;
 }
 
 .quadrado{
     height: 42vh;
 }
 
-.pastas div img{
-    height: 100%;
+.pastas div a{
+    height: 42vh;
+}
+
+.pastas img {
+    height: 100%; /* Mantém o tamanho das imagens */
+    display: block; /* Remove espaço embaixo causado pelo inline */
 }
 
