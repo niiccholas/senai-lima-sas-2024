@@ -18,4 +18,4 @@ Projeto final da disciplina de Front-End, elaborado com o objetivo de promover a
 ## Autores
 
 - [Lucas Nobre](https://www.linkedin.com/in/lucas-nobre-01941b327/)
-- [Nicolas Silva] (https://www.linkedin.com/in/nicolas-silva-b53b16327/)
+- [Nicolas Silva](https://www.linkedin.com/in/nicolas-silva-b53b16327/)
