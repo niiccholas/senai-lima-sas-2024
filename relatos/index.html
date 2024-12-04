@@ -21,18 +21,40 @@
         </div>
         <div id="relatos">
             <div class="relato1">
-                <a href="">
-                    <div class="circulo">
-                        <img src="./img/PLAY.png" alt="Botão de Play">
-                    </div>
-                </a>
+                <button class="circulo" onclick="document.getElementById('audio1').paused ? document.getElementById('audio1').play() : document.getElementById('audio1').pause()">
+                    <img src="./img/PLAY.png" alt="Botão de Play">
+                </button>
                 <h2>Nome do entrevistado</h2>
-                <!-- <p></p> -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>
-            <div class="relato2"></div>
-            <div class="relato3"></div>
-            <div class="relato4"></div>
+            <div class="relato2">
+                <button class="circulo">
+                    <img src="./img/PLAY.png" alt="Botão de Play">
+                </button>
+                <h2>Nome do entrevistado</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="relato3">
+                <button class="circulo">
+                    <img src="./img/PLAY.png" alt="Botão de Play">
+                </button>
+                <h2>Nome do entrevistado</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="relato4">
+                <button class="circulo">
+                    <img src="./img/PLAY.png" alt="Botão de Play">
+                </button>
+                <h2>Nome do entrevistado</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
         </div>
+
+        <audio id="audio1">
+            <source src="astral-creepy-dark-logo-254198 (1).mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+          </audio>
+          
     </main>
 
 </body>

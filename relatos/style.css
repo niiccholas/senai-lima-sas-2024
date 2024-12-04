@@ -25,10 +25,6 @@ body {
     transition: opacity 3s ease;
 }
 
-body.loading {
-    opacity: 0;
-}
-
 header {
     height: 12vh;
     display: flex;
@@ -82,7 +78,7 @@ main{
 
 #titulo h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4.5vh;
+    font-size: 5vh;
     height: 10vh;
     width: 60vh;
     text-align: center;
@@ -98,13 +94,100 @@ span{
     position: absolute;
     height: 10%;
     transform: translate(-50%, -50%);
-    left: 36%;
+    left: 35.5%;
     top: 20%;
 }
 
 #relatos{
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
     height: 75%;
-    background-color: #5a365d3f;
+    padding-top: 6vh;
+}
+
+.relato1{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.relato1 p, .relato1 h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.relato1 h2{
+    font-size: 3vh;
+}
+
+.relato1 p{
+    width: 28vh;
+    font-size: 2vh;
+}
+
+.relato2{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.relato2 p, .relato2 h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.relato2 h2{
+    font-size: 3vh;
+}
+
+.relato2 p{
+    width: 28vh;
+    font-size: 2vh;
+}
+
+.relato3{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.relato3 p, .relato3 h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.relato3 h2{
+    font-size: 3vh;
+}
+
+.relato3 p{
+    width: 28vh;
+    font-size: 2vh;
+}
+
+.relato4{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.relato4 p, .relato4 h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.relato4 h2{
+    font-size: 3vh;
+}
+
+.relato4 p{
+    width: 28vh;
+    font-size: 2vh;
 }
 
 .circulo{
@@ -112,10 +195,11 @@ span{
     height: 18vh;
     width: 18vh;
     border-radius: 50%;
-    background-color: #D9D9D9;
+    background-color: transparent;
     align-items: center;
     justify-content: center;
     padding-left: 0.7vh;
+    border-color: #9f3acb;
 }
 
 .circulo img{

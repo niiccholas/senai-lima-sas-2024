@@ -28,24 +28,39 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 0 10px;
     }
 
     button:hover {
       background-color: #45a049;
       transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
     }
-    
+
+    .stop-button {
+      background-color: #f44336; /* Cor do botão de stop */
+    }
+
   </style>
 </head>
 <body>
-  <!-- Botão para controlar o áudio -->
-  <button onclick="document.getElementById('audio').paused ? document.getElementById('audio').play() : document.getElementById('audio').pause()">
-    ▶
+  <!-- Botão para controlar o primeiro áudio -->
+  <button onclick="document.getElementById('audio1').paused ? document.getElementById('audio1').play() : document.getElementById('audio1').pause()">
+    ▶ Audio 1
   </button>
 
-  <!-- Elemento de áudio -->
-  <audio id="audio">
-    <source src="your-audio-file.mp3" type="audio/mpeg">
+  <!-- Botão para controlar o segundo áudio -->
+  <button onclick="document.getElementById('audio2').paused ? document.getElementById('audio2').play() : document.getElementById('audio2').pause()">
+    ▶ Audio 2
+  </button>
+
+  <!-- Elementos de áudio -->
+  <audio id="audio1">
+    <source src="astral-creepy-dark-logo-254198 (1).mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <audio id="audio2">
+    <source src="astral-creepy-dark-logo-254198 (1).mp3" type="audio/mpeg">
     Seu navegador não suporta o elemento de áudio.
   </audio>
 </body>
