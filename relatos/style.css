@@ -94,7 +94,7 @@ span{
     position: absolute;
     height: 10%;
     transform: translate(-50%, -50%);
-    left: 35.5%;
+    left: 36%;
     top: 20%;
 }
 
@@ -205,4 +205,8 @@ span{
 .circulo img{
     height: 40%;
     width: 40%;
+}
+
+p{
+    font-style: italic
 }
