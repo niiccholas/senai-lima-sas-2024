@@ -18,6 +18,10 @@ ul, ol, li{
 /* fim do reset */
 
 body {
+    overflow: hidden;
+}
+
+body {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -67,6 +71,19 @@ main{
     height: 88vh;
 }
 
+main #relatos, main #titulo{
+    opacity: 0; /* Oculto inicialmente */
+    transform: translateX(10vh); /* Deslocado para a direita */
+    animation: slideIn 0.7s ease-out forwards; /* Animação padrão */
+}
+
+@keyframes slideIn {
+    to {
+    opacity: 1;
+    transform: translateX(0); /* Posição final */
+    }
+}
+
 #titulo{
     display: flex;
     height: 25%;
@@ -91,10 +108,10 @@ span{
 
 #titulo img{
     position: absolute;
-    height: 10%;
+    height: 40%;
     transform: translate(-50%, -50%);
     left: 36%;
-    top: 20%;
+    top: 40%;
 }
 
 #relatos{

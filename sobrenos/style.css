@@ -53,6 +53,19 @@ header {
     border-radius: 50px;
 }
 
+.sobre-nos, .img{
+    opacity: 0;
+    transform: translateX(10vh);
+    animation: slideIn 0.7s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+    opacity: 1;
+    transform: translateX(0); /* Posição final */
+    }
+}
+
 .menu a{
     font-weight: 600;
     transition: all 0.3s ease;
@@ -85,7 +98,8 @@ header {
 
 .sobre-nos p {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 450;
+
 }
 
 .img{
