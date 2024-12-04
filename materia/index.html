@@ -4,114 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matéria de Arte</title>
-  <style>
-    /* reset */
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    a{
-        text-decoration: none; /* tira o sublinhado */
-        color: inherit; /* tira o esquema de cores */
-    }
-
-    ul, ol, li{
-        list-style: none;
-    }
-
-    /* fim do reset */
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    header {
-        height: 12vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 3vw;
-        padding-right: 20vw;
-    }
-
-    .logo{
-        height: 5vh;
-    }
-
-    .menu{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: Helvetica, sans-serif;
-        font-size: 1.9vh;
-        background-color: transparent;
-        border: 3.5px solid #5a365d3f;
-        width: 7vw;
-        text-align: center;
-        padding: 0.7vw;
-        border-radius: 5vh;
-    }
-
-    .menu a{
-        font-weight: 600;
-        transition: all 0.3s ease;
-    }
-
-    .menu:hover{
-        border: 3.5px solid #4A0592;
-        font-size: 2.05vh;
-        transition: all 0.3s ease;
-    }
-
-
-    main {
-      padding: 3vh;
-      display: flex;
-      height: 88vh;
-      gap: 10vh;
-      align-items: center;
-      background-color: #4b0082;
-      color: #fff;
-    }
-
-    .text-content {
-      flex: 2;
-    }
-
-    .text-content h3 {
-      font-size: 4vh;
-      line-height: 1.8;
-      font-weight: 550;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    .text-content1 {
-      flex: 2;
-    }
-
-    .text-content1 h3 {
-      font-size: 4vh;
-      line-height: 1.8;
-      font-weight: 550;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    
-    .image-placeholder {
-      position: relative;
-      flex: 1;
-      background-color: #dcdcdc;
-      width: 4vh;
-      height: 65vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px dashed #ccc;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
@@ -123,6 +16,7 @@
 </header>
   <main>
     <div class="text-content1">
+      <h1>Sobre a matéria</h1>
       <h3>
         A matéria de Arte é um convite à criatividade, expressão e sensibilidade.
         Nela, você explora diversas linguagens artísticas, como pintura, música, teatro
@@ -136,9 +30,7 @@
         </h3>
         </div>
     </div>
-    <div class="image-placeholder">
-      <p>Imagem</p>
-    </div>
+    <img src="https://imagens-revista-pro.vivadecora.com.br/uploads/2021/03/Arte-urbana_grandioso-mural-criado-pela-artista-Natalia-Rak.jpeg" alt="" class="image-placeholder">
   </main>
 </body>
 </html>

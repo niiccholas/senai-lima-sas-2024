@@ -29,6 +29,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: space-between;
     padding-left: 3vw;
     padding-right: 20vw;
@@ -46,7 +47,6 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: Helvetica, sans-serif;
     font-size: 1.9vh;
     background-color: transparent;
     border: 3.5px solid #5a365d3f;
@@ -57,13 +57,12 @@ main {
 }
 
 .menu a{
-    font-weight: bold;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .menu:hover{
     border: 3.5px solid #4A0592;
-    font-size: 2.05vh;
     transition: all 0.3s ease;
 }
 
