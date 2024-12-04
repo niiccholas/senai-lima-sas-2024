@@ -47,7 +47,7 @@ header {
     font-size: 1.9vh;
     background-color: transparent;
     border: 3.5px solid #5a365d3f;
-    width: 7vw;
+    width: 10vw;
     text-align: center;
     padding: 0.7vw;
     border-radius: 50px;
@@ -108,4 +108,12 @@ header {
     background-image: url('linha-do-tempo-da-historia-da-arte.jpg');
     border-radius: 10%;
     background-size: cover;
+}
+
+@media (max-width: 1400px){
+    .img{
+       
+        
+    }
+
 }
