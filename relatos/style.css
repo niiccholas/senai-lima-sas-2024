@@ -206,6 +206,10 @@ span{
     font-size: 2vh;
 }
 
+#relatos p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .circulo{
     display: flex;
     height: 18vh;
@@ -225,4 +229,10 @@ span{
 
 p{
     font-style: italic
+}
+
+@media (max-width: 1400px){
+    #relatos{
+        gap: 3vh
+    }
 }
