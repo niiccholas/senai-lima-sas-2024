@@ -1,0 +1,103 @@
+   /* Reset básico */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #FFFFFF;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+header {
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 20vw;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    height: 5vh;
+    color: #4A0066;
+}
+
+.menu {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.9vh;
+    background-color: transparent;
+    border: 3.5px solid #5a365d3f;
+    width: 7vw;
+    text-align: center;
+    padding: 0.7vw;
+    border-radius: 50px;
+}
+
+.menu a {
+    font-weight: 300;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.menu:hover {
+    border: 3.5px solid #4A0592;
+    font-size: 2.05vh;
+    transition: all 0.3s ease;
+}
+
+.main {
+    padding: 7px 200px;
+    background-color: #4A0592;
+    height: 86%;
+
+}
+
+.sobre-nos {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+    margin-bottom:200px;
+}
+
+.sobre-nos h2 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: -760px; /* Mantém o deslocamento horizontal */
+    margin-top: 150px; /* Aumente para mover o título mais para baixo */
+}
+
+.sobre-nos p {
+    font-size: 38px;
+    margin-bottom: 100px;
+    margin-left: -760px; /* Mantém o deslocamento horizontal */
+    margin-top: 50px; /* Adicione esta linha para dar espaço extra abaixo do título */
+    font-weight: 300;
+}
+
+
+
+.imagem-placeholder {
+    width: 600px;
+    height: 600px;
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 1500px;
+    position: relative; /* Adicionando o posicionamento relativo */
+    top: -460px; /* Movendo o quadrado para cima */
+    box-shadow: 1px #CCCCCC;
+}
