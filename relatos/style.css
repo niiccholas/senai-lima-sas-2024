@@ -40,6 +40,13 @@ header {
     padding-right: 20vw;
 }
 
+header div{
+    gap: 6.68vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .logo{
     height: 5vh;
 }
@@ -239,5 +246,56 @@ p{
     #titulo img{
         left: 29%;
         top: 35%;
+    }
+}
+
+@media (max-width: 1025px){
+    .logo{
+        padding-right: 4vw;
+    }
+    
+    .menu{
+        align-items: center;
+        text-align: center;
+        font-size: 1.9vh;
+        border: 3.5px solid #5a365d3f;
+        width: 12vw;
+        text-align: center;
+        padding: 0.7vw;
+        border-radius: 5vh;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: wrap;
+    }
+
+    header div{
+        gap: 4vw;
+        flex-direction: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    #titulo img{
+        left: 11%
+    }
+    #relatos{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .relato1, .relato2, .relato3, .relato4{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 4vw;
+    }
+    .circulo{
+        height: 12vh;
+        width: 12vh;
+    }
+    p{
+        padding-right: 4vw;
     }
 }
