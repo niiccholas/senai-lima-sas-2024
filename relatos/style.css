@@ -235,4 +235,9 @@ p{
     #relatos{
         gap: 3vh
     }
+
+    #titulo img{
+        left: 29%;
+        top: 35%;
+    }
 }

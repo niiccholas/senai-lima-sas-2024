@@ -112,6 +112,8 @@ header {
 }
 
 @media (max-width: 1400px){
-    
+    .sobre-nos p{
+        font-size: 2rem;
+    }
 
 }
