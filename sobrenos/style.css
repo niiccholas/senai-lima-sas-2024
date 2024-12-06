@@ -36,6 +36,13 @@ header {
     padding-right: 20vw;
 }
 
+header div{
+    gap: 6.68vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .logo{
     height: 5vh;
 }
@@ -47,7 +54,7 @@ header {
     font-size: 1.9vh;
     background-color: transparent;
     border: 3.5px solid #5a365d3f;
-    width: 10vw;
+    width: 11.4vw;
     text-align: center;
     padding: 0.7vw;
     border-radius: 50px;
@@ -114,6 +121,76 @@ header {
 @media (max-width: 1400px){
     .sobre-nos p{
         font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 1025px){
+    .logo{
+        padding-right: 4vw;
+    }
+    
+    .menu{
+        align-items: center;
+        text-align: center;
+        font-size: 1.9vh;
+        border: 3.5px solid #5a365d3f;
+        width: 12vw;
+        text-align: center;
+        padding: 0.7vw;
+        border-radius: 5vh;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: wrap;
+    }
+
+    header div{
+        gap: 4vw;
+        flex-direction: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .img{
+        height: 700px;
+        width: 700px;
+        margin-top: 100px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre-nos{
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 5vh;
+    }
+
+    .main h2{
+        font-size: 70px;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+        width: 50vh;
+        text-align: center;
+    }
+    .main p{
+        font-size: 1.9vh;
+        margin-top: -2px;
+        text-align: center;
+
+    }
+    
+    .img{
+        background-position: 80%;
+        height: 60vh;
+        background-size: 100%;
+        background-image: url(https://i.em.com.br/JOWk9uUBL5JXNoX9ujPkV0bJYQg=/1200x675/smart/imgsapp.em.com.br/app/noticia_127983242361/2022/10/22/1410378/a-lua-tela-pintada-por-tarsila-do-amaral_1_46177.jpg);
     }
 
 }
