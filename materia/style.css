@@ -17,15 +17,16 @@ ul, ol, li{
 
 /* fim do reset */
 
-
 html, body {
     overflow-y: hidden; /* Desativa a rolagem vertical */
-  }
+}
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    opacity: 1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    overflow: hdden;
 }
 
 header {
@@ -33,14 +34,25 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: space-between;
     padding-left: 3vw;
     padding-right: 20vw;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header div{
+    gap: 6.68vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .logo{
     height: 5vh;
+}
+
+main {
+    height: 88vh;
 }
 
 .menu{
@@ -57,6 +69,16 @@ header {
 }
 
 
+.menu{
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.menu:hover{
+    border: 3.5px solid #4A0592;
+    transition: all 0.3s ease;
+}
+
 
 .menu{
     font-weight: 600;
@@ -70,17 +92,11 @@ header {
 
 
 .text-content1, main img{
-    opacity: 0; /* Oculto inicialmente */
-    transform: translateX(10vh); /* Deslocado para a direita */
-    animation: slideIn 0.7s ease-out forwards; /* Animação padrão */
+    opacity: 0; 
+    transform: translateX(10vh); 
+    animation: slideIn 0.7s ease-out forwards;
 }
 
-@keyframes slideIn {
-    to {
-    opacity: 1;
-    transform: translateX(0); /* Posição final */
-    }
-}
 
 h1{
     font-size: 8.5vh;
@@ -110,6 +126,13 @@ main img{
     border-radius: 10vh;
 }
 
+@keyframes slideIn {
+    to {
+    opacity: 1;
+    transform: translateX(0); 
+    }
+}
+
 @media (max-width: 1400px){
     main img{
         height: 65vh;
@@ -120,4 +143,97 @@ main img{
     .text-content{
         font-size: 1vh;
     }
+}
+
+@media (max-width: 1025px){
+    .logo{
+        padding-right: 4vw;
+    }
+    
+    .menu{
+        align-items: center;
+        text-align: center;
+        font-size: 1.9vh;
+        border: 3.5px solid #5a365d3f;
+        width: 12vw;
+        text-align: center;
+        padding: 0.7vw;
+        border-radius: 5vh;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: wrap;
+    }
+
+    header div{
+        gap: 4vw;
+        flex-direction: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2vw;
+    }
+    .text-content h3, .text-content1 h3, h1{
+        text-align: center;
+        font-size: 2.5vh;
+        width: 105%;
+        overflow: hidden;  
+    }
+
+    h1{
+        font-size: 5vw;
+    }
+
+    main img{
+        width: 57%;
+    }
+
+    main{
+        gap: 3%
+    }
+}
+
+@media (max-width: 490px){
+    body{
+        gap: 1vh;
+    }
+    header{
+        height: 6vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        display: none;
+    }
+    header div{
+        order: 1;
+        padding-top: 3%;
+    }
+    main {
+        height: 94vh;
+    }
+    main img{
+        width: 100%;
+    }
+    .text-content h3, .text-content1 h3, h1{
+        padding-inline: 5vh;
+        font-size: 2vh;
+        width: 55vh;
+    }
+    .menu{
+        width: 10vh;
+    }
+    .menu div{
+        display: flex;
+        padding-bottom: 0.5vh;
+    }
+
 }

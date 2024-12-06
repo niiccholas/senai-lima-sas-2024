@@ -17,16 +17,15 @@ ul, ol, li{
 
 /* fim do reset */
 
-body {
-    overflow: hidden;
+html, body {
+    overflow-y: hidden; /* Desativa a rolagem vertical */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     opacity: 1;
-    transition: opacity 3s ease;
 }
 
 header {
@@ -51,6 +50,10 @@ header div{
     height: 5vh;
 }
 
+main {
+    height: 88vh;
+}
+
 .menu{
     justify-content: center;
     align-items: center;
@@ -61,7 +64,18 @@ header div{
     width: 10vw;
     text-align: center;
     padding: 0.7vw;
-    border-radius: 50px;
+    border-radius: 5vh;
+}
+
+
+.menu{
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.menu:hover{
+    border: 3.5px solid #4A0592;
+    transition: all 0.3s ease;
 }
 
 .menu{
@@ -82,13 +96,6 @@ main #relatos, main #titulo{
     opacity: 0; /* Oculto inicialmente */
     transform: translateX(10vh); /* Deslocado para a direita */
     animation: slideIn 0.7s ease-out forwards; /* Animação padrão */
-}
-
-@keyframes slideIn {
-    to {
-    opacity: 1;
-    transform: translateX(0); /* Posição final */
-    }
 }
 
 #titulo{
@@ -238,6 +245,13 @@ p{
     font-style: italic
 }
 
+@keyframes slideIn {
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
 @media (max-width: 1400px){
     #relatos{
         gap: 3vh
@@ -298,4 +312,89 @@ p{
     p{
         padding-right: 4vw;
     }
+}
+
+@media (max-width: 490px){
+    body{
+        gap: 1vh;
+    }
+    header{
+        height: 6vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        display: none;
+    }
+    header div{
+        order: 1;
+        padding-top: 3%;
+    }
+    main {
+        padding: 0;
+        height: 94vh;
+    }
+    .menu{
+        width: 10vh;
+    }
+    .menu div{
+        display: flex;
+        padding-bottom: 0.5vh;
+    }
+    #relatos{
+        padding: 0;
+    }
+    #titulo{
+        display: flex;
+        align-items: baseline;
+        height: 27%;
+        padding: 0;
+    }
+    #titulo h1{
+        padding-top: 3vh;
+        width: 100%;
+        height: 65%;
+    }
+    #titulo span{
+        font-weight: 600;
+    }
+    #titulo img{
+        height: 5vh;
+        left: 22.5%;
+        top: 13%;
+    }
+    p{
+        font-size: medium;
+        padding-right: 1vw;
+    }
+    .circulo{
+        height: 12vh;
+        width: 12vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circulo img{
+        all: unset;
+        height: 10vw;
+        border-radius: 50%;
+    }
+    #relatos{
+        justify-content: center;
+        align-items: center;
+    }
+    #relatos div{
+        gap: 2vw;
+        justify-content: center;
+    }
+    #relatos div h2{
+        width: 12vh;
+    }
+    #relatos div p{
+        display: none;
+    }
+
 }
