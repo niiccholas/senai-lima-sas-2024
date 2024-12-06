@@ -282,4 +282,8 @@ h2{
         padding-left: 3vw;
         height: 42vh;
     }
+
+    .arte img{
+        left: 20%;
+    }
 }
